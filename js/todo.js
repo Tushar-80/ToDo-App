@@ -20,3 +20,4 @@ function addTask() {
   removeBtn.textContent = 'Remove';
   li.appendChild(removeBtn);
 
+  todoList.appendChild(li);
