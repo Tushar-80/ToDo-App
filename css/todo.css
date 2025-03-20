@@ -23,4 +23,6 @@
     text-align: center;
     transition: transform 0.2s ease-in-out;
   }
-  
+  .todo-container:hover {
+    transform: scale(1.02);
+  }
