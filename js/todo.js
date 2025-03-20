@@ -42,4 +42,20 @@ function removeTask(event) {
     });
     localStorage.setItem('tasks', JSON.stringify(tasks));
   }
+
+  function loadTasks() {
+    const savedTasks = JSON.parse(localStorage.getItem('tasks'));
+    
+    if (savedTasks && savedTasks.length > 0) {
+      savedTasks.forEach(taskText => {
+        const li = document.createElement('li');
+        li.textContent = taskText;
   
+        const removeBtn = document.createElement('button');
+        removeBtn.textContent = 'Remove';
+        li.appendChild(removeBtn);
+  
+        todoList.appendChild(li);
+      });
+    }
+  }
