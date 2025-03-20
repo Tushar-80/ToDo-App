@@ -13,3 +13,5 @@ function addTask() {
   
     if (taskText === '') return;
   
+    const li = document.createElement('li');
+  li.textContent = taskText;
