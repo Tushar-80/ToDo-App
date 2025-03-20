@@ -26,3 +26,11 @@ function addTask() {
   todoInput.value = '';
 }
 
+function removeTask(event) {
+    if (event.target.tagName === 'BUTTON') {
+      const task = event.target.parentElement;
+      task.remove();
+      saveTasks();
+    }
+  }
+  
