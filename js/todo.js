@@ -15,3 +15,8 @@ function addTask() {
   
     const li = document.createElement('li');
   li.textContent = taskText;
+
+  const removeBtn = document.createElement('button');
+  removeBtn.textContent = 'Remove';
+  li.appendChild(removeBtn);
+
