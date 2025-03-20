@@ -7,3 +7,9 @@ document.addEventListener('DOMContentLoaded', loadTasks);
 addBtn.addEventListener('click', addTask);
 
 todoList.addEventListener('click', removeTask);
+
+function addTask() {
+    const taskText = todoInput.value.trim();
+  
+    if (taskText === '') return;
+  
