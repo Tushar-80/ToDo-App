@@ -34,3 +34,12 @@ function removeTask(event) {
     }
   }
   
+  function saveTasks() {
+    const tasks = [];
+    const taskItems = todoList.querySelectorAll('li');
+    taskItems.forEach(item => {
+      tasks.push(item.firstChild.textContent);
+    });
+    localStorage.setItem('tasks', JSON.stringify(tasks));
+  }
+  
