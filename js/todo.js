@@ -23,3 +23,6 @@ function addTask() {
   todoList.appendChild(li);
 
   saveTasks();
+  todoInput.value = '';
+}
+
