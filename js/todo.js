@@ -5,3 +5,5 @@ const todoList = document.getElementById('todo-list');
 document.addEventListener('DOMContentLoaded', loadTasks);
 
 addBtn.addEventListener('click', addTask);
+
+todoList.addEventListener('click', removeTask);
