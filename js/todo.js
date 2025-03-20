@@ -21,3 +21,5 @@ function addTask() {
   li.appendChild(removeBtn);
 
   todoList.appendChild(li);
+
+  saveTasks();
